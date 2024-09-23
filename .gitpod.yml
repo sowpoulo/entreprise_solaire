@@ -1,0 +1,6 @@
+image: gitpod/python
+tasks:
+  - init: |
+      pip install django
+      django-admin startproject entreprise_solaire .
+  - command: python manage.py runserver 0.0.0.0:8000
